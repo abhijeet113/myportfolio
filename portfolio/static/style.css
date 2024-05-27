@@ -8,7 +8,7 @@
 
 body {
     color: #ededed;
-
+    background-color: #081b29;
 
 }
 
@@ -223,28 +223,38 @@ body {
     margin: 5% 5% 5% 5%;
     height: 600px;
     width: 40%;
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
     border-radius: 20px;
+    background-image: url("");
 }
 
 .myinfo {
     margin: 5% 5% 5% 5%;
     height: 600px;
     width: 40%;
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
     border-radius: 20px;
+    h2{
+        margin: 20px 20px 20px 20px;
+
+    }
+    p{
+        margin: 20px 20px 20px 20px;
+        font-size: 20px;
+    }
 }
+
 .Skills{
     h1{
-        color: #030303;
+        color: #f7f4f4;
         margin-left: 40px;
     }
 }
 .Skill {
     width:100%;
     
-    color: #282020;
-    /* background-color: gray; */ 
+    color: #d6d2d2;
+    /* background-color: gray;  */
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -260,7 +270,7 @@ body {
     li:hover{   
         h4{
             visibility: visible;
-            color: rgb(24, 37, 38);
+            color: rgb(235, 240, 241);
             animation: h4ht 1s;
             text-shadow: #081b29;
         }
@@ -268,7 +278,7 @@ body {
     li h4{
         margin-top: 70%;
         visibility: hidden;
-        color: rgb(12, 20, 21);
+        color: rgb(223, 229, 230);
         /* animation: h4ht 1s ease-out; */
     }
     .bar{
@@ -280,12 +290,15 @@ body {
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 3px rgba(0, 0, 0, 0.24);
+        
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         transform: scaleY(-1); /* Flip vertically */
         /* justify-content: space-evenly; */
     }
     .bar:hover{
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+        /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22); */
+        box-shadow: 0 1px 3px cyan,0 1px 3px cyan;
+
     }
     .bar span{
         display: block;
@@ -293,9 +306,7 @@ body {
             background: linear-gradient(135deg, rgba(236, 0, 140, 1) 0%, rgba(252, 103, 103, 1) 100%);
             animation-duration: 2s;
             animation-fill-mode: forwards;
-            }
-            
-
+    }
     .html{
         height:90%;
         animation: html 5s;
@@ -318,6 +329,14 @@ body {
     .express{
         height:75%;
         animation: express 3s;
+    }
+    .MongoDB{
+        height:65%;
+        animation: mongodb 3s;
+    }
+    .Mysql{
+        height:75%;
+        animation: mysql 3s;
     }
    
 }
@@ -368,6 +387,22 @@ body {
         height: 75%; /* Change final height to 75% */
     }
 }
+@keyframes Mysql {
+    0% {
+        height: 0; /* Change initial height to 0 */
+    }
+    100% {
+        height: 75%; /* Change final height to 75% */
+    }
+}
+@keyframes mongodb {
+    0% {
+        height: 0; /* Change initial height to 0 */
+    }
+    100% {
+        height: 65%; /* Change final height to 75% */
+    }
+}
  
 @keyframes h4ht{
     0%{
@@ -376,4 +411,16 @@ body {
     100%{
         margin-top: 70%;
     }
+}
+.Project{
+    height: 500px;
+    background: #000;
+}
+
+
+
+footer{
+   h1{
+    font-size: 100px;
+   }
 }
