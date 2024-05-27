@@ -1,0 +1,379 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    color: #ededed;
+
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: black;
+
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 0.6s ease forwards;
+
+
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 3s;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.text {
+    color: #0ef;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("/static/bgimg2.jpg");
+
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    padding: 70px 10% 0;
+    animation: fade 2.5s ease forwards;
+}
+
+.homecontent {
+    max-width: 600px;
+}
+
+.homecontent h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slidedown .5s ease forwards;
+
+
+}
+
+.homecontent h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.homecontent h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    animation: slideRight .5s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.homecontent p {
+    font-size: 20px;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    border-radius: 50%;
+
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+
+}
+
+.btn-box {
+    margin-top: 25px;
+    display: inline-flex;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600px;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan,
+        0 0 50px cyan,
+        0 0 200px cyan;
+
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+.About {
+    height: 700px;
+    background: #282626;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collage {
+    margin: 5% 5% 5% 5%;
+    height: 600px;
+    width: 40%;
+    border: 2px solid cyan;
+    border-radius: 20px;
+}
+
+.myinfo {
+    margin: 5% 5% 5% 5%;
+    height: 600px;
+    width: 40%;
+    border: 2px solid cyan;
+    border-radius: 20px;
+}
+.Skills{
+    h1{
+        color: #030303;
+        margin-left: 40px;
+    }
+}
+.Skill {
+    width:100%;
+    
+    color: #282020;
+    /* background-color: gray; */ 
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+    li{
+        margin: 20px 0;
+        padding:10px;
+        display: flex;
+        
+    }
+    
+    li:hover{   
+        h4{
+            visibility: visible;
+            color: rgb(24, 37, 38);
+            animation: h4ht 1s;
+            text-shadow: #081b29;
+        }
+    }
+    li h4{
+        margin-top: 70%;
+        visibility: hidden;
+        color: rgb(12, 20, 21);
+        /* animation: h4ht 1s ease-out; */
+    }
+    .bar{
+        background-color: #353b35;
+        display: block;
+        height: 400px;
+        width:50px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 3px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transform: scaleY(-1); /* Flip vertically */
+        /* justify-content: space-evenly; */
+    }
+    .bar:hover{
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    .bar span{
+        display: block;
+            width: 100%;
+            background: linear-gradient(135deg, rgba(236, 0, 140, 1) 0%, rgba(252, 103, 103, 1) 100%);
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            }
+            
+
+    .html{
+        height:90%;
+        animation: html 5s;
+    }
+
+    .css{
+        height:90%;
+        animation: css 5s;
+    }
+    
+    .javascript{
+        height:70%;
+        animation: javascript 3s;
+    }
+    
+    .Nodejs{
+        height:80%;
+        animation: nodejs 3s;
+    }
+    .express{
+        height:75%;
+        animation: express 3s;
+    }
+   
+}
+
+@keyframes html {
+    0% {
+        height: 0;
+        
+    }
+    100% {
+        height: 90%; /* Change final height to 90% */
+        
+    }
+}
+
+@keyframes css {
+    0% {
+        height: 0; /* Change initial height to 0 */
+    }
+    100% {
+        height: 90%; /* Change final height to 90% */
+    }
+}
+
+@keyframes javascript {
+    0% {
+        height: 0; /* Change initial height to 0 */
+    }
+    100% {
+        height: 70%; /* Change final height to 70% */
+    }
+}
+
+@keyframes nodejs {
+    0% {
+        height: 0; /* Change initial height to 0 */
+    }
+    100% {
+        height: 80%; /* Change final height to 80% */
+    }
+}
+
+@keyframes express {
+    0% {
+        height: 0; /* Change initial height to 0 */
+    }
+    100% {
+        height: 75%; /* Change final height to 75% */
+    }
+}
+ 
+@keyframes h4ht{
+    0%{
+        margin-top: 0%;
+    }
+    100%{
+        margin-top: 70%;
+    }
+}
