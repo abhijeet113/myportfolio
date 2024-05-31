@@ -10,7 +10,126 @@
         <link rel="stylesheet" href="{% static 'style.css' %}">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <style>
+            .collage {
+            margin: 5%;
+            height: 600px;
+            width: 40%;
+            border-radius: 20px;
+            background-image: url("");
+            display: block;
+            justify-content: space-evenly;
+            h2{
+            margin: 20px 20px 20px 20px;
+            }
+        }
 
+        .collage .school {
+            margin: auto;
+            height: 60px;
+            margin-bottom: 10%;
+        }
+
+        .collage .school p {
+            margin-left: 40px;
+        }
+        .collage .school i {
+            margin-left: 40px;
+        }
+.Project {
+    height: 500px;
+    background-color: #000;
+}
+
+.Project h2 {
+    margin-top: 50px;
+}
+
+.Project .projectSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Allow horizontal scrolling */
+    overflow-x: auto; /* Enable horizontal scroll */
+    overflow-y: hidden; /* Hide vertical scroll */
+    scroll-behavior:smooth;
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: calc(100% - 30px); /* Account for margin */
+    white-space: nowrap; /* Prevent wrapping of items */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Optional: to add some padding inside the section */
+}
+
+.Project .pro {
+    position: relative; /* Ensure the data div is positioned relative to .pro */
+    flex: 0 0 auto; /* Prevent flex items from shrinking or growing */
+    height: 350px;
+    width: 400px;
+    margin: 10px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    background-color: #111; /* Optional: Background color for better visibility */
+    overflow: hidden;
+}
+
+.Project .pro:hover {
+    /* height: 360px;
+    width: 410px; */
+    opacity: 0.3;
+}
+
+.Project .pro a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin: 10px;
+}
+
+.Project .pro img {
+        margin: 10px;
+        height: 200px;
+    width: 100%; /* Ensure the image fits within the pro div */
+    object-fit: cover; /* Optional: to maintain aspect ratio */
+}
+
+.Project .pro .data {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position relative to .pro */
+    
+    top: 0;
+    /* bottom: 10px; Adjust as needed */
+    left: 0; /* Adjust as needed */
+    /* right: 10px; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 233, 219, 0.8); /* Background with some transparency */
+    color:rgb(10, 4, 4); /* Text color */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    white-space: normal;
+    text-align: justify;
+    animation: slidedown 2s ease;
+    font-size:20px ;
+    font-weight: 400;
+    a{
+        color:rgb(10, 4, 4);
+    }
+    
+}
+
+.Project .pro:hover .data {
+    
+    display: block; /* Show on hover */
+}
+
+
+        </style>
     </head>
     <body>
         <header class="header">
@@ -43,6 +162,34 @@
         </section>     
         <section class="About" id="About">
             <div class="collage">
+                <h2>Education</h2>
+
+                <br>    
+                <ul>
+                    <li>
+                        <div class="school">
+                            <label for="">2020</label>
+                            <p>S.G.PUBLIC SCHOOL,SINNAR</p>
+                            <i>SSC 94.80%</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="school">
+                            <label for="">2022</label>
+                            <p>ART,COMMERCE AND SCIENCE JR. COLLEGE,PANGARI</p>
+                            <i>HSC 84.17%</i>
+                            <i>CET 97.63 percentile</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="school">
+                            <label for="">2026</label>
+                            <p>BRACT'S VISHWAKARMA INSTITUTE OF INFORMATION TECHNOLOGY,PUNE</p>
+                            <i>CGPA 8.38</i>
+                            
+                        </div>
+                    </li>
+                </ul>
 
             </div>
             <div class="myinfo">
@@ -111,26 +258,55 @@
             
         </section>
         <section class="Project" id="Project">
-            <img src="https://github.com/abhijeet113/myportfolio" alt="" srcset="">
-        </section>
-        <section class="Contact" id="Contact">
-            <br><br><br>
-            <footer>
-                <h1> contact me
-                </h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias qui nihil aperiam in delectus magnam dolorum temporibus dicta itaque quia eligendi doloribus nesciunt eaque, eos mollitia. Earum ratione doloribus harum explicabo dolor omnis fugit assumenda voluptatibus eos. Incidunt et consectetur a asperiores. Voluptas ipsa dolorum minus id debitis aspernatur pariatur! Veritatis eum maiores autem quibusdam eveniet eos odio fugiat itaque nemo excepturi porro architecto recusandae magni, ducimus reiciendis qui aliquid accusantium minus enim. Tenetur repellat eos, ex atque nam excepturi quia sunt nesciunt voluptas accusamus minima perferendis incidunt facilis deserunt dicta asperiores. Dolorum culpa cupiditate nesciunt explicabo dolores magnam placeat ad est minima sunt earum debitis tenetur, aliquam numquam alias asperiores sint porro magni accusamus reprehenderit? Tempore, consequatur sunt. Praesentium dignissimos, quo dolorum ipsum placeat aut autem. Tempore ipsa aperiam enim iste, voluptatem, ratione illum sequi modi deserunt earum tempora culpa ex error, dicta ducimus nesciunt libero porro incidunt laudantium animi. Nisi natus sit voluptatibus nulla totam, provident quis asperiores pariatur rerum ab excepturi. Laborum sit labore, consequuntur veritatis mollitia eaque earum impedit excepturi molestias tempora exercitationem harum quisquam dolore quas cum itaque animi obcaecati a deserunt nihil, saepe hic cupiditate sunt? Possimus, repellat repudiandae. Veniam ex ratione aut hic sapiente aliquid ut assumenda adipisci maiores. Voluptatem velit animi pariatur officia deserunt recusandae numquam minus. Sed aliquid, voluptates voluptatem accusantium itaque, esse deleniti iusto eveniet possimus nemo ipsam! Vero consequatur tempore laboriosam natus quae dolore, nemo excepturi dolorum iusto soluta maxime quasi totam, labore quam rem sed, eaque eos enim nisi repudiandae perferendis! Dignissimos nihil deleniti nostrum, ut odit odio consequuntur voluptates ullam quae ex quia voluptatem aperiam exercitationem sapiente tempora beatae, ad nam facere vero. Consequatur nesciunt deserunt alias voluptatibus amet temporibus! Voluptas consequuntur laudantium voluptatum doloremque libero illum quidem aliquam magni perspiciatis, iusto aperiam molestias consectetur voluptatem inventore magnam quam molestiae eum, error voluptate dolore repellat delectus eligendi! Illum, atque laudantium! Aspernatur, fugiat aut. Eos vero voluptates odit eaque exercitationem. Magnam quibusdam eaque qui in incidunt repellat eius pariatur, eum mollitia doloribus eos corrupti quidem fugiat ipsam laudantium ab eveniet ipsa maiores enim deserunt corporis voluptate nam earum maxime? Laudantium saepe aliquam commodi, dolorum pariatur veniam, doloribus numquam nesciunt et qui tempora consequuntur sequi quibusdam minima exercitationem! Facilis voluptatem repellat eveniet, libero est quod nulla consectetur neque sint? Perferendis enim inventore ut hic vitae facilis doloremque. Deleniti quibusdam enim debitis, laudantium accusamus dignissimos corrupti facere nobis blanditiis provident aspernatur obcaecati quo esse minus. Dolores maxime exercitationem laborum commodi nisi cupiditate ipsa eius omnis accusamus illo sunt eum ut rem deserunt sequi, reprehenderit cumque, itaque laudantium quaerat perspiciatis! Deserunt laboriosam expedita non porro, facere adipisci asperiores consequatur accusantium veritatis ea vero facilis sequi! Commodi, est! Alias voluptas facere vel ullam laborum numquam doloribus eligendi inventore iusto fugiat praesentium maiores omnis quae labore quos voluptates consequatur nostrum ab magnam, perferendis vero similique! Alias esse hic animi. Illo rerum blanditiis omnis ducimus fugit officia quod doloremque, pariatur officiis tempora tempore hic ex adipisci, minima numquam odio sit? Nisi reprehenderit magnam rem assumenda aperiam saepe, ab qui delectus tenetur itaque illo impedit eius quaerat soluta nemo quae magni sit iusto omnis! Eum ducimus vitae molestiae vero tempore perspiciatis veritatis unde, nostrum eius, dolorem laudantium inventore delectus illum mollitia temporibus magnam dolore harum consequatur exercitationem similique in sit sapiente. Placeat labore minus libero, repudiandae aliquam quas, pariatur deleniti repellendus sequi, ullam tempora? Possimus voluptates earum dolorum soluta recusandae, sint minima voluptatem in impedit hic velit natus tempora obcaecati, nulla, nostrum sapiente illum ad laudantium nam dolore quos itaque. Deserunt vero nesciunt quo, veritatis officia, perspiciatis voluptatum at temporibus assumenda odit magni distinctio quia, totam dolore impedit illum. Voluptatibus tempore reiciendis obcaecati quis ea mollitia at minus et facere illo id maiores recusandae necessitatibus eius ut vitae eum suscipit, est quas? Quae aliquam distinctio, praesentium exercitationem magnam cum sint eaque debitis at quam quisquam facilis ullam nisi, consequuntur blanditiis dolorem assumenda quibusdam autem ex aperiam. Minima repellat fugit laboriosam, ex vitae corrupti commodi eligendi iste saepe nesciunt maiores qui sunt at magnam illo dicta? Perferendis eaque molestias dolore qui possimus modi a aliquid dolor ducimus eveniet alias blanditiis ad in inventore cum distinctio, magnam voluptatibus? Nostrum numquam, repellendus optio voluptas deleniti et nulla tenetur. Molestiae veritatis quae quisquam, laborum dolore rerum dicta, impedit quaerat labore, a fugiat suscipit. Quam vitae cumque temporibus illum aperiam ab veritatis qui cupiditate doloribus consequuntur blanditiis, debitis sequi doloremque, in mollitia reprehenderit commodi distinctio beatae maxime soluta nulla! Molestiae quod nam non quaerat? Ipsa id, odit, et minima temporibus ea consequatur aspernatur cumque eaque illo mollitia vero iure expedita voluptatem itaque ex excepturi harum minus sint perferendis, animi vel. Unde, quam illum. Ut numquam repellendus voluptates odit voluptas cum veniam molestiae commodi, ipsa sapiente a debitis eum itaque vitae minima temporibus assumenda! Repellendus eius aut est similique asperiores consequuntur, quasi consectetur voluptatibus ut porro modi quaerat mollitia. Sed dicta quos dolore pariatur hic voluptatem molestias blanditiis laudantium vero adipisci possimus aliquam sequi quae aut error, voluptas consectetur ullam, dolorum sapiente optio inventore fuga deleniti odit dignissimos! Tempore, saepe doloremque. Blanditiis, aut. Quam saepe quas sed earum error? Quaerat corporis blanditiis, aliquam soluta provident odio quibusdam quod excepturi omnis numquam itaque velit laboriosam sint veniam eligendi non quas id porro. Dicta aperiam quibusdam quidem cum nostrum quia natus distinctio, enim, possimus quasi at odit rerum corrupti nisi ipsa ex beatae maiores in amet necessitatibus tempora, odio voluptatem! Alias ea minus voluptatum suscipit laborum. Impedit tempora nam sequi, doloremque fugit mollitia nemo, debitis deleniti ad vel voluptate dolor aspernatur amet. Unde deserunt sequi velit reprehenderit excepturi quos! Architecto eligendi similique sit impedit pariatur animi amet magnam tenetur esse repellendus exercitationem beatae, minima modi nulla. Fuga, quo? Ipsa eum cum omnis. Iusto placeat nisi, quod officia dolore, veritatis recusandae, illo velit officiis totam dolorum facilis voluptatem beatae distinctio repudiandae praesentium. Iure reiciendis nostrum excepturi praesentium reprehenderit voluptas. Rem ipsum eius est distinctio hic! Totam impedit eos quisquam veniam perspiciatis nesciunt quae voluptates excepturi consectetur omnis sequi distinctio, cumque, perferendis libero labore eaque! 
+            <h2> Projects</h2>
+            <div class="projectSection">
+                <div class="pro">
+                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
+                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                    <div class="data">
+                        <br><br>
+                        <a href="https://github.com/abhijeet113/myportfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime optio quaerat iure rerum inventore ipsam eligendi quae? Quibusdam optio velit id exercitationem consectetur, eius illum ut fugit quas iste.</a>
+                        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in quae nisi, incidunt maiores delectus repellat odit tempore laborum necessitatibus, temporibus suscipit autem aliquid! Atque iste pariatur aut ab recusandae? -->
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
+                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                </div>
+                <div class="pro">
+                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
+                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                </div>
+                <div class="pro">
+                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
+                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                </div>
+                <div class="pro">
+                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
+                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                </div>
+                <div class="pro">
+                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
+                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                </div>
+                <div class="pro">
+                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
+                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                </div>
+            </div>
 
-            </footer>
         </section>
-        <script>
-            var typed = new typed(".text", {
-            strings: ["Frontend Developer","Youtuber","Web Developer"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            backDelay: 1000,
-            loop: true
-            });
-        </script>
+        
+        
         <script src="/script.js" async defer></script>
     </body>
+    <script>
+        var typed = new typed(".text", {
+        strings: ["Frontend Developer","Youtuber","Web Developer"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true
+        });
+    </script>
 </html>

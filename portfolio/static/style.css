@@ -3,13 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
 
 }
 
 body {
     color: #ededed;
     background-color: #081b29;
-
+    max-width: 100%;
+    left:0;
+    right: 0;
+    
 }
 
 .header {
@@ -226,6 +230,19 @@ body {
     /* border: 2px solid cyan; */
     border-radius: 20px;
     background-image: url("");
+    display: block;
+    justify-content: space-evenly;
+
+    
+}
+.collage .school{
+    margin: auto;
+    height: 200px;
+    margin-bottom: 10%;
+    
+}
+.collage.school p{
+    margin-left: 100px;
 }
 
 .myinfo {
@@ -411,10 +428,6 @@ body {
     100%{
         margin-top: 70%;
     }
-}
-.Project{
-    height: 500px;
-    background: #000;
 }
 
 
