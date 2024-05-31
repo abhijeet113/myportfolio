@@ -42,6 +42,7 @@
 }
 
 .Project h2 {
+    margin: 5% 1% 5% 1%;
     margin-top: 50px;
 }
 
@@ -60,6 +61,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px; /* Optional: to add some padding inside the section */
+    scrollbar-width:none;
 }
 
 .Project .pro {
@@ -105,8 +107,8 @@
     /* right: 10px; */
     width: 100%;
     height: 100%;
-    background-color: rgba(15, 233, 219, 0.8); /* Background with some transparency */
-    color:rgb(10, 4, 4); /* Text color */
+    background-color:cyan; /* Background with some transparency */
+    color:rgb(255, 255, 255); /* Text color */
     padding: 10px;
     box-sizing: border-box;
     z-index: 1;
@@ -118,16 +120,129 @@
     font-size:20px ;
     font-weight: 400;
     a{
-        color:rgb(10, 4, 4);
+        color:#000;
+        font-weight: 500;
+        
     }
     
 }
-
+.Project .pro:hover{
+    border: 2px solid rgb(246, 241, 183);
+}
 .Project .pro:hover .data {
     
     display: block; /* Show on hover */
 }
 
+
+#experience {
+  max-width: 30%;
+  margin: 5% 1% 5% 1%;
+  padding: 20px;
+  /* background: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  /* background: #d4d4d4; */
+}
+
+.timeline-item {
+  margin: 20px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  background: rgb(29, 28, 28);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgb(29, 28, 28);
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  color: rgb(29, 28, 28);
+}
+
+.timeline-item h4 {
+  margin: 0;
+  color: #f3eeee;
+}
+
+.timeline-item span {
+  display: block;
+  margin-bottom: 10px;
+  color: #eae6e6;
+  font-size: 14px;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  color: #e6e3e3;
+}
+
+.timeline-item p strong {
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(29, 28, 28);
+}
+
+.timeline-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(29, 28, 28);
+  text-decoration: none;
+  border-bottom: 1px dashed rgb(29, 28, 28) ;
+  transition: color 0.3s ease;
+}
+
+.timeline-item a:hover {
+  color: rgb(29, 28, 28);
+  border-bottom-color: rgb(29, 28, 28);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #experience {
+    padding: 10px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    padding-left: 10px;
+  }
+
+  .timeline-item::before {
+    left: -10px;
+  }
+}
 
         </style>
     </head>
@@ -166,14 +281,14 @@
 
                 <br>    
                 <ul>
-                    <li>
+                    <li class="timeline-item">
                         <div class="school">
                             <label for="">2020</label>
                             <p>S.G.PUBLIC SCHOOL,SINNAR</p>
                             <i>SSC 94.80%</i>
                         </div>
                     </li>
-                    <li>
+                    <li class="timeline-item">
                         <div class="school">
                             <label for="">2022</label>
                             <p>ART,COMMERCE AND SCIENCE JR. COLLEGE,PANGARI</p>
@@ -181,7 +296,7 @@
                             <i>CET 97.63 percentile</i>
                         </div>
                     </li>
-                    <li>
+                    <li class="timeline-item">
                         <div class="school">
                             <label for="">2026</label>
                             <p>BRACT'S VISHWAKARMA INSTITUTE OF INFORMATION TECHNOLOGY,PUNE</p>
@@ -192,12 +307,34 @@
                 </ul>
 
             </div>
+            
             <div class="myinfo">
                 <h2>About Me</h2>
                 <p>Hello! I'm Abhijeet Shinde, a passionate Computer Engineering student with a keen interest in the ever-evolving world of technology. Currently pursuing my degree, I am dedicated to honing my skills and expanding my knowledge in various aspects of computer science and engineering.
 
                     From a young age, I have been fascinated by computers and their potential to solve complex problems. This curiosity led me to choose Computer Engineering as my field of study, where I have been immersed in learning about software development, hardware design, and system architecture. I thrive on tackling challenges and enjoy the process of turning ideas into functional and innovative solutions.</p>
             </div>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <h3>Senior Developer</h3>
+                    <h4>Tech Solutions Inc.</h4>
+                    <span>Jan 2020 - Present</span>
+                    <p>Developed and maintained web applications, collaborated with cross-functional teams, and led a team of junior developers.</p>
+                    <p><strong>Technologies:</strong> React, Node.js, AWS</p>
+                    <a href="https://link-to-project.com">View Project</a>
+                  </div>
+                  <div class="timeline-item">
+                    <h3>Frontend Developer</h3>
+                    <h4>Creative Agency</h4>
+                    <span>Jun 2017 - Dec 2019</span>
+                    <p>Implemented responsive web designs, optimized website performance, and contributed to UX/UI improvements.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://link-to-project.com">View Project</a>
+                  </div>
+                </div>
+              </section>
         </section>   
         <section class="Skills" id="Skills">
             <h1>Skill</h1>
@@ -270,31 +407,36 @@
                     </div>
                 </div>
                 <div class="pro">
-                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
-                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                    <a href="https://github.com/abhijeet113/myportfolio">GET IMAGE</a><br>
+                    <img src="/static/get image.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                    <div class="data">
+                        <br><br>
+                        <a href="https://github.com/abhijeet113/getimage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime optio quaerat iure rerum inventore ipsam eligendi quae? Quibusdam optio velit id exercitationem consectetur, eius illum ut fugit quas iste.</a>
+                    </div>
                 </div>
                 <div class="pro">
-                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
-                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                    <a href="https://shleshapatil2212.github.io/gfg/"> CMI</a><br>
+                    <img src="/static/cmi.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                    <div class="data">
+                        <br><br>
+                    <a href="https://shleshapatil2212.github.io/gfg/">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime optio quaerat iure rerum inventore ipsam eligendi quae? Quibusdam optio velit id exercitationem consectetur, eius illum ut fugit quas iste.</a>
+                    </div>
                 </div>
                 <div class="pro">
-                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
-                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                    <a href="https://github.com/abhijeet113/she-share">She-Share</a><br>
+                    <img src="/static/sheshare.png" alt="" srcset="" style=" width: 300px; height: 200px;">
+                    <div class="data">
+                        <br><br>
+                    <a href="https://github.com/abhijeet113/she-share">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime optio quaerat iure rerum inventore ipsam eligendi quae? Quibusdam optio velit id exercitationem consectetur, eius illum ut fugit quas iste.</a>
+                    </div>
                 </div>
-                <div class="pro">
-                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
-                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
-                </div>
-                <div class="pro">
-                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
-                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
-                </div>
-                <div class="pro">
-                    <a href="https://github.com/abhijeet113/myportfolio"> portfolio</a><br>
-                    <img src="/static/Screenshot 2024-05-31 133404.png" alt="" srcset="" style=" width: 300px; height: 200px;">
-                </div>
+                
             </div>
 
+        </section>
+        <section class="experience" id="experience">
+            
+              
         </section>
         
         

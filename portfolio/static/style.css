@@ -7,6 +7,7 @@
 
 }
 
+
 body {
     color: #ededed;
     background-color: #081b29;
@@ -218,13 +219,14 @@ body {
 
 .About {
     height: 700px;
-    background: #282626;
+    background: #807676;
     display: flex;
     justify-content: space-evenly;
 }
 
 .collage {
-    margin: 5% 5% 5% 5%;
+    left: 0;
+    margin: 5% 1% 5% 0%;
     height: 600px;
     width: 40%;
     /* border: 2px solid cyan; */
@@ -232,8 +234,12 @@ body {
     background-image: url("");
     display: block;
     justify-content: space-evenly;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     
+}
+.collage ul{
+    margin-left: 50px;
 }
 .collage .school{
     margin: auto;
@@ -243,20 +249,28 @@ body {
 }
 .collage.school p{
     margin-left: 100px;
+    color: #807676;
+}
+.collage .school label{
+    color: black;
+    font-weight: 600;
 }
 
+
 .myinfo {
-    margin: 5% 5% 5% 5%;
+    margin: 5% 1% 5% 1%;
     height: 600px;
-    width: 40%;
+    width: 45%;
     /* border: 2px solid cyan; */
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     h2{
-        margin: 20px 20px 20px 20px;
+        
+        margin: 20px 10px 20px 10px;
 
     }
     p{
-        margin: 20px 20px 20px 20px;
+        margin: 20px 10px 20px 10px;
         font-size: 20px;
     }
 }
@@ -264,7 +278,7 @@ body {
 .Skills{
     h1{
         color: #f7f4f4;
-        margin-left: 40px;
+        margin: 5% 1% 5% 1%;
     }
 }
 .Skill {
