@@ -224,37 +224,9 @@ body {
     justify-content: space-evenly;
 }
 
-.collage {
-    left: 0;
-    margin: 5% 1% 5% 0%;
-    height: 600px;
-    width: 40%;
-    /* border: 2px solid cyan; */
-    border-radius: 20px;
-    background-image: url("");
-    display: block;
-    justify-content: space-evenly;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 
-    
-}
-.collage ul{
-    margin-left: 50px;
-}
-.collage .school{
-    margin: auto;
-    height: 200px;
-    margin-bottom: 10%;
-    
-}
-.collage.school p{
-    margin-left: 100px;
-    color: #807676;
-}
-.collage .school label{
-    color: black;
-    font-weight: 600;
-}
+
 
 
 .myinfo {
@@ -445,9 +417,3 @@ body {
 }
 
 
-
-footer{
-   h1{
-    font-size: 100px;
-   }
-}
