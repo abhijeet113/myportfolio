@@ -7,22 +7,19 @@
         <title>portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <!-- <link rel="stylesheet" href="{% static 'style.css' %}"> -->
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <style>
-            * {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 100%;
-
 }
-
-
 body {
     color: #ededed;
     background-color: #081b29;
@@ -40,13 +37,15 @@ body {
     padding: 20px 10%;
     background: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     z-index: 100;
     background-color: black;
-
 }
-
+.header a{
+    left: 0;
+    margin-left: 0px;
+}
 .logo {
     position: relative;
     font-size: 25px;
@@ -56,8 +55,6 @@ body {
     cursor: default;
     opacity: 0;
     animation: slideRight 0.6s ease forwards;
-
-
 }
 
 .navbar a {
@@ -83,11 +80,11 @@ body {
 .home {
     position: relative;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100vh;
-    background-image: url("/static/bgimg2.jpg");
+    /* background-image: url("/static/bgimg2.jpg");  */
 
-    background-size: cover;
+    /* background-size: cover; */
     display: flex;
     background-position: center;
     align-items: center;
@@ -96,7 +93,7 @@ body {
 }
 
 .homecontent {
-    max-width: 600px;
+    width: 60%;
 }
 
 .homecontent h3 {
@@ -231,7 +228,12 @@ body {
         opacity: 1;
     }
 }
-
+.home .img1{
+    height: 100%;
+    width: 90%;
+    background-image: url("/static/Screenshot_2024-06-03_161005-removebg-preview.png");
+    background-size: cover; 
+}
 .About {
     height: 700px;
     background: #807676;
@@ -438,6 +440,7 @@ body {
             margin: 5%;
             height: 600px;
             width: 40%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             background-image: url("");
             display: block;
@@ -558,7 +561,7 @@ body {
 }
 
 #experience {
-  max-width: 30%;
+  width: 30%;
   margin: 5% 1% 5% 1%;
   padding: 20px;
   /* background: #fff; */
@@ -676,7 +679,7 @@ body {
 }
 #certificates h2{   
     color:white;
-    background: ;
+    /* background: ; */
     margin: 1% 2% 1% 2%;
 }
 
@@ -781,6 +784,210 @@ form{
 #inputZip:hover{
     background-color: #000;
 }
+@media (max-width: 300px) {
+    body {
+        /* color: #000000; */
+        /* background-color: #ffffff; */
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .header {
+        height: auto;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background-color: black;
+        z-index: 100;
+    }
+
+    .logo {
+        text-align: start;
+        font-size: 15px;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .home {
+        display: block;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-top: 60px; /* Add padding to avoid overlap with header */
+    }
+
+    .homecontent {
+        width: 90%;
+        text-align: center;
+    }
+
+    .homecontent h3 {
+        font-size: 18px;
+    }
+
+    .homecontent h1 {
+        font-size: 28px;
+    }
+
+    .homecontent p {
+        font-size: 14px;
+    }
+
+    .btn-box {
+        margin-top: 15px;
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .home .img1 {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 10px 0;
+    }
+
+    .About {
+        height: auto;
+        display: block;
+        padding: 20px;
+        background: #807676;
+    }
+    .collage {
+        height: auto;
+        width: 100%;
+        /* text-align: center; */
+        padding: 20px;
+        /* background-color: #f5f5f5; */
+        margin-top: 20px;
+    }
+    .collage .school{
+        height: auto;
+        margin: 20px;
+    }
+    .collage h2 {
+        font-size: 18px;
+        margin-bottom:0px;
+    }
+
+    .collage p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .collage a {
+        font-size: 12px;
+        color: #0066cc;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .collage a:hover {
+        text-decoration: underline;
+    }
+    .myinfo {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        box-shadow: none;
+    }
+
+    .myinfo h2, .myinfo p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    #experience{
+        width: auto;
+    }
+
+    .Skills {
+        padding: 20px;
+        width:auto;
+    }
+
+    .Skills h1 {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #f7f4f4;
+    }
+
+    .Skill {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .Skill li {
+        /* margin: 10px 0; */
+        padding: 0px;
+        text-align: center;
+    }
+
+    .Skill li h4 {
+        font-size: 1px;
+    }
+
+    .Skill .bar {
+        height: 200px;
+        width: 30px;
+    }
+    .Project .pro:hover .data {
+    
+    display: block; /* Show on hover */
+}
+    .Project .pro{
+        
+        margin: 2px 5px 2px 2px;
+    }
+    .Project .pro img{
+        height: inherit;
+        margin: 5px;
+    }
+    #certificates{
+        
+        height: auto;
+    }
+    #certificates .box span img{
+        height: auto;
+        width: auto;
+    }
+    #certificates .box {
+        margin: auto;
+        height: 150px;
+        width: 150px;
+    }
+    #certificates .box span{
+        margin: 10% 10% 10% 10%;
+        position: absolute;
+        transform: rotateY(calc(var(--i)*90deg)) translateZ(100px);
+    }
+    form{
+        label{
+            font-size: 15px;
+        }
+        button{
+            width: fit-content;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
+    }
+
+}
 
 
         </style>
@@ -797,7 +1004,7 @@ form{
             </nav>
         </header> 
         <section class="home" id="Home">
-            <div class="homecontent">
+             <div class="homecontent">
                 <h3>Hello, It's Me</h3>
                 <h1>Abhijeet Shinde</h1>
                 <h3> And I'm a Computer Engineer..<span class="text"></span></h3>
@@ -812,6 +1019,9 @@ form{
                     <a href="#"><i class='bx bxl-twitter' ></i></a>
                 </div>
                 <a href="#About" class="btn-box">More About Me</a>
+            </div>  
+            <div class="img1 ">
+                
             </div>
         </section>     
         <section class="About" id="About">
@@ -972,6 +1182,8 @@ form{
             </div>
 
         </section>
+        
+
         <section class="certificates" id="certificates">
             <h2>Achievements & Certificates</h2>
             <div class="box">
